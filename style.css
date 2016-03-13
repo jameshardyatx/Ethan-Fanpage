@@ -1,0 +1,112 @@
+body {
+  font-family: "Copperplate Gothic", "Comic Sans MS", sans-serif;
+  background: #333;
+  color: #ee6801;
+  font-size: default;
+  margin: 10px;
+  text-align: center;
+}
+
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header, footer, .col-full, .col-half, .col-third {
+  flex: 1 100%;
+  margin: 20px;
+}
+p {
+  font-size: default;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ol {
+  text-align: left;
+}
+
+a {
+  color: #ff7912;
+}
+
+a:visited {
+  color: #cc6801;
+}
+
+.center {
+  text-align: center;
+}
+
+.lighter {
+  background-color: #555566;
+}
+
+.darker {
+  background-color: #111;
+}
+
+.old {
+  transform-style: preserve-3d;
+  transform: perspective(1200px) rotateY(7deg);
+  -webkit-filter: saturate(0.66) brightness(1.05);
+           filter: saturate(0.66) brightness(1.05);
+}
+
+figure {
+  max-width: 100vw;
+}
+
+footer {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+header {
+  width: 100vw;
+  padding: 20px;
+}
+img {
+  margin: 5px;
+}
+.left {
+  float: left;
+animation-name: tilt;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+.right {
+  float: right;
+  animation-name: tilt;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.col-full {
+width: 100vw;
+padding: 20px;
+}
+
+.col-half {
+  width: 50%;
+  padding: 20px;
+}
+
+.col-third {
+  width: 33%;
+  padding: 20px;
+}
+
+@keyframes tilt {
+  0%  {transform:rotate(-45deg);}
+  50% {transform: rotate(90deg);}
+  100% {transform: rotate(-135deg);}
+}
